@@ -27,7 +27,7 @@ function Services() {
     },
     {
       icon: 'fas fa-laptop-code',
-      title: 'Produçao Especializada para Midias Sociais',
+      title: 'Produção Especializada para Midias Sociais',
       description: 'Ideial para marcas que desejam se destacar com conteúdos profissionais e envolventes.',
       category: 'CONTEÚDO'
     },
