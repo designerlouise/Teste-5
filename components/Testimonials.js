@@ -2,23 +2,23 @@ function Testimonials() {
   try {
     const testimonials = [
       {
-        name: 'Maria Silva',
-        role: 'CEO da Fashion Store',
-        text: 'O trabalho da Louise transformou completamente nossa presença digital. Vendas aumentaram 300% em 3 meses!',
+        name: 'Ana Flores',
+        role: 'Terapeuta',
+        text: 'Hoje venho aqui agradecer ao seu trabalho de gestão em marketing, em menos de 1 mês já estou vendo resultados',
         rating: 5,
         avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b665?w=100&h=100&fit=crop&crop=face'
       },
       {
-        name: 'João Santos',
-        role: 'Dono do Restaurante Sabor',
-        text: 'Impressionante como ela conseguiu capturar a essência da nossa marca. Nosso Instagram nunca teve tanto engajamento.',
+        name: 'Just Açai Rodeiro',
+        role: 'Loja de Açais',
+        text: 'Desde que começamos a trabalhar com a Designer Louise, nossa identidade visual ficou tão deliciosa quanto nossos açaís! Ela entendeu perfeitamente o clima jovem, vibrante e refrescante que queríamos transmitir. Simplesmente impecável!.',
         rating: 5,
         avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
       },
       {
-        name: 'Ana Costa',
-        role: 'Fundadora da TechStart',
-        text: 'Louise não só criou um design incrível, mas também uma estratégia que realmente funciona. Recomendo 100%!',
+        name: 'Making Of',
+        role: 'Centro de Beleza em Barbacena',
+        text: 'A Louise trouxe elegância e sofisticação para nossa marca. O cuidado que ela tem com cada detalhe faz toda a diferença, e isso reflete exatamente oque oferecemos no nosso espaço. Somos fãs do trabalho dela!',
         rating: 5,
         avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
       }
