@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+header {
+  background-color: #e50914;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Impact', sans-serif;
+  font-size: 48px;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('<!-- SUBSTITUIR AQUI: imagem de fundo -->') no-repeat center/cover;
+}
+.hero-buttons button {
+  margin: 10px;
+  background-color: #e50914;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+.hero-buttons button:hover {
+  transform: scale(1.1);
+}
+section {
+  padding: 50px 20px;
+}
+.card {
+  background: #111;
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.feedback img {
+  width: 50px;
+  border-radius: 50%;
+}
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+form button {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
