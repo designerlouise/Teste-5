@@ -38,16 +38,16 @@ function Footer() {
             <div>
               <h3 className="text-white font-bold mb-4">Contato</h3>
               <div className="space-y-2 text-gray-400">
-                <p><i className="fas fa-envelope mr-2 netflix-red-text"></i> contato@louiseflix.com</p>
-                <p><i className="fas fa-phone mr-2 netflix-red-text"></i> (11) 99999-9999</p>
-                <p><i className="fab fa-whatsapp mr-2 netflix-red-text"></i> (11) 99999-9999</p>
-                <p><i className="fas fa-map-marker-alt mr-2 netflix-red-text"></i> São Paulo, SP</p>
+                <p><i className="fas fa-envelope mr-2 netflix-red-text"></i> designlouisegrafico@gmail.com</p>
+                <p><i className="fas fa-phone mr-2 netflix-red-text"></i> (32) 99110-2463</p>
+                <p><i className="fab fa-whatsapp mr-2 netflix-red-text"></i> (32) 99110-2463</p>
+                <p><i className="fas fa-map-marker-alt mr-2 netflix-red-text"></i> Rodeiro, MG</p>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-            <p>&copy; 2024 Louiseflix. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Louiseflix _ Designer Louise. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
