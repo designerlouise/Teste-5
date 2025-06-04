@@ -14,12 +14,13 @@ function About() {
                 Quem <span className="netflix-red-text">Sou Eu</span>
               </h2>
               <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-                Sou Louise, designer apaixonada por criar conteúdos visuais que não apenas impressionam, 
-                mas que realmente convertem. Com mais de 5 anos de experiência no mercado digital.
+                Sou Louise, sou uma especialista em mídia social apaixonada por ajudar empresas a alcançarem seu potencial online. 
+                Com uma vasta experiência em estratégias digitais, estou pronta para impulsionar sua presença nas redes sociais e criar conexões autênticas com seu público-alvo..
               </p>
               <p className="text-lg text-gray-400 mb-8">
-                Especializada em transformar ideias em campanhas visuais de sucesso, 
-                combinando criatividade com estratégia para gerar resultados reais para meus clientes.
+              Compreendo a importância das redes sociais na era digital e como elas podem impactar diretamente os resultados de um negócio. Minha
+              abordagem estratégica e criativa visa aumentar o engajamento,
+              construir relacionamentos duradouros e gerar um impacto positivo na percepção da sua marca.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="bg-gray-800 px-4 py-2 rounded">
