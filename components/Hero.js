@@ -13,11 +13,11 @@ function Hero() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-              Design que <span className="netflix-red-text">Domina</span>
+              Design que <span className="netflix-red-text">Converte</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
-              Na Louiseflix, criamos conteúdo visual épico para social media e campanhas de tráfego pago 
-              que fazem sua marca se destacar como um blockbuster.
+              Na Designer Louise, criamos conteúdo visual épico para o seu negócio e campanhas de tráfego pago 
+              que fazem sua marca se destacar no digital.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
