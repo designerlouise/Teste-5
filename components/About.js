@@ -17,7 +17,7 @@ function About() {
               </h2>
               <p className="text-lg text-white mb-4 leading-relaxed">
                 Sou Louise, designer apaixonada por criar conteúdos visuais que não apenas impressionam, mas que realmente convertem.
-                Com mais de 5 anos de experiência no mercado digital.
+                Com mais de 9 anos de experiência no mercado digital.
               </p>
               <p className="text-md text-gray-400 mb-8 leading-relaxed">
                 Especializada em transformar ideias em campanhas visuais de sucesso, combinando criatividade com estratégia para gerar resultados reais para meus clientes.
@@ -32,7 +32,7 @@ function About() {
                   <span className="text-red-500 font-bold">200+</span> Clientes
                 </div>
                 <div className="bg-gray-800 text-white px-4 py-2 rounded">
-                  <span className="text-red-500 font-bold">5</span> Anos
+                  <span className="text-red-500 font-bold">9</span> Anos
                 </div>
               </div>
             </div>
