@@ -16,11 +16,18 @@ function Footer() {
                 <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
                   <i className="fab fa-instagram text-2xl"></i>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                  <i className="fab fa-linkedin text-2xl"></i>
+                {/* LinkedIn trocado por email */}
+                <a href="mailto:designlouisegrafico@gmail.com" className="text-gray-400 hover:text-red-500 transition-colors">
+                  <i className="fas fa-envelope text-2xl"></i>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                  <i className="fab fa-behance text-2xl"></i>
+                {/* Behance trocado por WhatsApp com mensagem automática */}
+                <a 
+                  href="https://wa.me/5532991102463?text=Ol%C3%A1!%20Vim%20pelo%20site...%20Gostaria%20de%20uma%20Solu%C3%A7%C3%A3o%20Estrat%C3%A9gica%20para%20o%20meu%20Neg%C3%B3cio." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-red-500 transition-colors"
+                >
+                  <i className="fab fa-whatsapp text-2xl"></i>
                 </a>
               </div>
             </div>
