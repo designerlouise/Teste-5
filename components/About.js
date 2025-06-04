@@ -4,6 +4,7 @@ function About() {
       <section data-name="about" data-file="components/About.js" id="about" className="section-padding bg-black">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Texto à esquerda */}
             <div>
               <div className="mb-4">
                 <span className="bg-red-600 text-white text-sm px-3 py-1 rounded font-bold">
@@ -14,13 +15,13 @@ function About() {
                 Quem <span className="netflix-red-text">Sou Eu</span>
               </h2>
               <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-                Sou Louise, sou uma especialista em mídia social apaixonada por ajudar empresas a alcançarem seu potencial online. 
-                Com uma vasta experiência em estratégias digitais, estou pronta para impulsionar sua presença nas redes sociais e criar conexões autênticas com seu público-alvo..
+                Sou Louise, sou uma especialista em mídia social apaixonada por ajudar empresas a alcançarem seu potencial online.
+                Com uma vasta experiência em estratégias digitais, estou pronta para impulsionar sua presença nas redes sociais e criar conexões autênticas com seu público-alvo.
               </p>
               <p className="text-lg text-gray-400 mb-8">
-              Compreendo a importância das redes sociais na era digital e como elas podem impactar diretamente os resultados de um negócio. Minha
-              abordagem estratégica e criativa visa aumentar o engajamento,
-              construir relacionamentos duradouros e gerar um impacto positivo na percepção da sua marca.
+                Compreendo a importância das redes sociais na era digital e como elas podem impactar diretamente os resultados de um negócio. Minha
+                abordagem estratégica e criativa visa aumentar o engajamento,
+                construir relacionamentos duradouros e gerar um impacto positivo na percepção da sua marca.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="bg-gray-800 px-4 py-2 rounded">
@@ -34,13 +35,15 @@ function About() {
                 </div>
               </div>
             </div>
-            
-            <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-red-500/20 to-black rounded-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <i className="fas fa-user-circle text-8xl text-red-500 mb-4"></i>
-                  <p className="text-gray-300 text-lg">Louise Designer</p>
-                </div>
+
+            {/* Imagem à direita */}
+            <div className="relative flex items-center justify-center">
+              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-red-600 shadow-lg">
+                <img
+                  src="4.png" // Substitua pelo caminho correto da sua imagem
+                  alt="Louise Designer"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
