@@ -2,25 +2,28 @@ function Downloads() {
   try {
     const materials = [
       {
-        title: 'Guia Completo de Social Media',
+        title: 'Checklist do Instagram Estratégico',
         description: 'E-book com estratégias para bombar nas redes sociais',
         icon: 'fas fa-book',
-        size: '2.5 MB',
-        format: 'PDF'
+        size: '6.3 MB',
+        format: 'PDF',
+        url: 'https://drive.google.com/file/d/1CWn14LT02pMMaWCVaNDnHp9Xms5riejE/view?usp=drivesdk' // 👉 INSIRA AQUI o link para download do e-book
       },
       {
-        title: 'Templates para Stories',
-        description: 'Pack com 50 templates editáveis para Instagram Stories',
+        title: 'Mini Guia da Bio Estratégica',
+        description: 'Guia para você transformar a sua bio estratégicamente ',
         icon: 'fas fa-images',
-        size: '15 MB',
-        format: 'PSD'
+        size: '147,5 KB',
+        format: 'PDF',
+        url: 'https://drive.google.com/file/d/1D5-d7rpPRtR_TUoO9dLov228jalwOijv/view?usp=drivesdk' // 👉 INSIRA AQUI o link para download do pack de templates
       },
       {
-        title: 'Checklist de Tráfego Pago',
-        description: 'Lista completa para otimizar suas campanhas',
+        title: 'Apresentação Comercial',
+        description: 'Apresentação completa para conhecer a Designer Louise',
         icon: 'fas fa-list-check',
-        size: '1.2 MB',
-        format: 'PDF'
+        size: '14.2 MB',
+        format: 'PDF',
+        url: 'https://drive.google.com/file/d/1Io4S5ToTSxRGPQy-0vEH69MylrbG12C2/view?usp=drivesdk' // 👉 INSIRA AQUI o link para download do checklist
       }
     ];
 
@@ -48,10 +51,16 @@ function Downloads() {
                   <span className="text-sm text-gray-400">{material.format}</span>
                   <span className="text-sm text-gray-400">{material.size}</span>
                 </div>
-                <button className="w-full btn-netflix px-4 py-3 rounded text-white font-bold">
+                <a
+                  href={material.url}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-block text-center btn-netflix px-4 py-3 rounded text-white font-bold"
+                >
                   <i className="fas fa-download mr-2"></i>
                   Download Gratuito
-                </button>
+                </a>
               </div>
             ))}
           </div>
