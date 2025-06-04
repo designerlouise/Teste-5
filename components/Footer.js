@@ -13,7 +13,6 @@ function Footer() {
                 Conteúdo que converte como os maiores sucessos do streaming.
               </p>
               <div className="flex space-x-4">
-                {/* Instagram */}
                 <a 
                   href="https://www.instagram.com/designer.louise/profilecard/?igsh=MWgydHBpbTV0NDJicw==" 
                   target="_blank" 
@@ -22,14 +21,12 @@ function Footer() {
                 >
                   <i className="fab fa-instagram text-2xl"></i>
                 </a>
-                {/* Email */}
                 <a 
                   href="mailto:designlouisegrafico@gmail.com" 
                   className="text-gray-400 hover:text-red-500 transition-colors"
                 >
                   <i className="fas fa-envelope text-2xl"></i>
                 </a>
-                {/* WhatsApp com mensagem automática */}
                 <a 
                   href="https://wa.me/5532991102463?text=Ol%C3%A1!%20Vim%20pelo%20site...%20Gostaria%20de%20uma%20Solu%C3%A7%C3%A3o%20Estrat%C3%A9gica%20para%20o%20meu%20Neg%C3%B3cio." 
                   target="_blank" 
@@ -44,11 +41,14 @@ function Footer() {
             <div>
               <h3 className="text-white font-bold mb-4">Soluções Estratégicas</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="<button 
-                onClick={() => scrollToSection('services')}" className="hover:text-white transition-colors">Design Digital</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Social Media</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Tráfego Pago</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Branding</a></li>
+                <li>
+                  <a 
+                    href="#solucoes-estrategicas" 
+                    className="hover:text-white transition-colors"
+                  >
+                    Social Media
+                  </a>
+                </li>
               </ul>
             </div>
 
