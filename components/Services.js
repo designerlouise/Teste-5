@@ -3,20 +3,20 @@ function Services() {
     const services = [
       {
         icon: 'fas fa-video',
-        title: 'Design Digital',
-        description: 'Criamos identidades visuais cinematográficas que capturam a atenção como um trailer de sucesso.',
+        title: 'Gestão de Redes Sociais',
+        description: 'O objetivo é aumentar o engajamento, atrair novos seguidores e converter esses seguidores em clientes.',
         category: 'ORIGINAL'
       },
       {
         icon: 'fas fa-film',
-        title: 'Social Media',
-        description: 'Produzimos conteúdo visual para redes sociais com a qualidade de uma produção Netflix.',
+        title: 'Social Media Viral',
+        description: 'Ideal para quem deseja aumentar rapidamente a visibilidade nas redes sociais.',
         category: 'SÉRIE'
       },
       {
         icon: 'fas fa-bullhorn',
-        title: 'Tráfego Pago',
-        description: 'Campanhas publicitárias que geram audiência como os maiores sucessos da plataforma.',
+        title: 'Estruturação de Perfil',
+        description: 'O objetivo é causar uma excelente primeira impressão e transmitir profissionalismo.',
         category: 'FILME'
       }
     ];
