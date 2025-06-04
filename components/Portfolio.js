@@ -2,26 +2,26 @@ function Portfolio() {
   try {
     const projects = [
       {
-        title: 'Fashion Empire',
-        category: 'Design & Ads',
+        title: 'Making Of - Centro de Beleza',
+        category: 'Design Gráfico',
         image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop',
         rating: '98% Match'
       },
       {
-        title: 'Gourmet Stories',
-        category: 'Social Media',
+        title: 'Just Açaí - Rodeiro',
+        category: 'Design Gráfico',
         image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=300&fit=crop',
         rating: '95% Match'
       },
       {
-        title: 'Tech Revolution',
-        category: 'Branding',
+        title: 'Dr. Iphone - Assistência Técnica',
+        category: 'Social Media',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
         rating: '92% Match'
       },
       {
-        title: 'Health Plus',
-        category: 'Digital Campaign',
+        title: 'Você pode ser o Próximo...',
+        category: 'Design, Social Media, Tráfego Pago',
         image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop',
         rating: '89% Match'
       }
@@ -31,8 +31,8 @@ function Portfolio() {
       <section data-name="portfolio" data-file="components/Portfolio.js" id="portfolio" className="section-padding bg-black">
         <div className="container mx-auto px-4">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold mb-2">Trending Now</h2>
-            <p className="text-gray-400">Projetos em alta que estão dominando o mercado</p>
+            <h2 className="text-3xl font-bold mb-2">Alguns Projetos</h2>
+            <p className="text-gray-400">Alguns dos meus projetos, Marcas que ja fazem parte da Designer Louise</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
