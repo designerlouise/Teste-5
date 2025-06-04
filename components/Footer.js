@@ -37,21 +37,7 @@ function Footer() {
                 </a>
               </div>
             </div>
-
-            <div>
-              <h3 className="text-white font-bold mb-4">Soluções Estratégicas</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a 
-                    href="#solucoes-estrategicas" 
-                    className="hover:text-white transition-colors"
-                  >
-                    Social Media
-                  </a>
-                </li>
-              </ul>
-            </div>
-
+                    
             <div>
               <h3 className="text-white font-bold mb-4">Contato</h3>
               <div className="space-y-2 text-gray-400">
