@@ -14,7 +14,6 @@ function Header() {
               <a href="#home" className="text-white hover:text-red-500 transition-colors font-medium">Início</a>
               <a href="#about" className="text-white hover:text-red-500 transition-colors font-medium">Quem Sou eu</a>
               <a href="#services" className="text-white hover:text-red-500 transition-colors font-medium">Soluções Estratégicas</a>
-              <a href="#portfolio" className="text-white hover:text-red-500 transition-colors font-medium">Apresentação Comercial</a>
               <a href="#downloads" className="text-white hover:text-red-500 transition-colors font-medium">Downloads</a>
               <a href="#testimonials" className="text-white hover:text-red-500 transition-colors font-medium">Feedbacks</a>
               <a href="#contact" className="text-white hover:text-red-500 transition-colors font-medium">Contato</a>
@@ -34,7 +33,6 @@ function Header() {
                 <a href="#home" className="text-white hover:text-red-500 transition-colors">Início</a>
                 <a href="#about" className="text-white hover:text-red-500 transition-colors">Quem Sou eu</a>
                 <a href="#services" className="text-white hover:text-red-500 transition-colors">Soluções Estratégicas</a>
-                <a href="#portfolio" className="text-white hover:text-red-500 transition-colors">Apresentação Comercial</a>
                 <a href="#downloads" className="text-white hover:text-red-500 transition-colors">Downloads</a>
                 <a href="#testimonials" className="text-white hover:text-red-500 transition-colors">Feedbacks</a>
                 <a href="#contact" className="text-white hover:text-red-500 transition-colors">Contato</a>
