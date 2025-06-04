@@ -6,9 +6,9 @@ function Header() {
       <header data-name="header" data-file="components/Header.js" className="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-            <div className="text-3xl font-bold netflix-logo">
-              LOUISEFLIX
-            </div>
+            <a href="#home" className="text-3xl font-bold netflix-logo text-white hover:text-red-500 transition-colors">
+  LOUISEFLIX
+</a>
             
             <nav className="hidden lg:flex space-x-6">
               <a href="#home" className="text-white hover:text-red-500 transition-colors font-medium">Início</a>
