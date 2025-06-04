@@ -12,9 +12,9 @@ function Header() {
             
             <nav className="hidden lg:flex space-x-6">
               <a href="#home" className="text-white hover:text-red-500 transition-colors font-medium">Início</a>
-              <a href="#about" className="text-white hover:text-red-500 transition-colors font-medium">Quem Sou</a>
+              <a href="#Who am I?" className="text-white hover:text-red-500 transition-colors font-medium">Quem Sou</a>
               <a href="#services" className="text-white hover:text-red-500 transition-colors font-medium">Soluções</a>
-              <a href="#portfolio" className="text-white hover:text-red-500 transition-colors font-medium">Portfolio</a>
+              <a href="#Commercial Presentation" className="text-white hover:text-red-500 transition-colors font-medium">Portfolio</a>
               <a href="#downloads" className="text-white hover:text-red-500 transition-colors font-medium">Downloads</a>
               <a href="#testimonials" className="text-white hover:text-red-500 transition-colors font-medium">Feedbacks</a>
               <a href="#contact" className="text-white hover:text-red-500 transition-colors font-medium">Contato</a>
