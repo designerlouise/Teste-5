@@ -18,6 +18,36 @@ function Services() {
         title: 'Estruturação de Perfil',
         description: 'O objetivo é causar uma excelente primeira impressão e transmitir profissionalismo.',
         category: 'FILME'
+        },
+    {
+      icon: 'fas fa-pen-nib',
+      title: 'Consultoria Estratégica de Conteúdo',
+      description: 'Ideal para quem busca direcionamento estratégico para suas redes sociais.',
+      category: 'CONSULTORIA'
+    },
+    {
+      icon: 'fas fa-laptop-code',
+      title: 'Produçao Especializada para Midias Sociais',
+      description: 'Ideial para marcas que desejam se destacar com conteúdos profissionais e envolventes.',
+      category: 'CONTEÚDO'
+    },
+    {
+      icon: 'fas fa-search-dollar',
+      title: 'Pack de Conteúdo',
+      description: 'Perfeito para quem busca agilidade na produção de conteúdo sem abrir mão da qualidade.',
+      category: 'PACK'
+    },
+    {
+      icon: 'fas fa-magic',
+      title: 'Gestão de Tráfego',
+      description: 'Campanhas publicitárias que geram audiência como os maiores sucessos da plataforma.',
+      category: 'TRÁFEGO'
+    },
+    {
+      icon: 'fas fa-users',
+      title: 'Muito mais',
+      description: 'Diversas Soluções para te posicionar estratégica e profissionalmente no digital.',
+      category: 'VARIEDADE'
       }
     ];
 
