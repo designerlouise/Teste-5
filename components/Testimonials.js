@@ -6,7 +6,7 @@ function Testimonials() {
         role: 'Terapeuta',
         text: 'Hoje venho aqui agradecer ao seu trabalho de gestão em marketing, em menos de 1 mês já estou vendo resultados',
         rating: 5,
-        avatar: '/img/3.png'
+        avatar: '3.png'
       },
       {
         name: 'Just Açai Rodeiro',
@@ -20,7 +20,7 @@ function Testimonials() {
         role: 'Centro de Beleza em Barbacena',
         text: 'A Louise trouxe elegância e sofisticação para nossa marca. O cuidado que ela tem com cada detalhe faz toda a diferença, e isso reflete exatamente oque oferecemos no nosso espaço. Somos fãs do trabalho dela!',
         rating: 5,
-        avatar: 'Teste-5/2.png'
+        avatar: '2.png'
       }
     ];
 
