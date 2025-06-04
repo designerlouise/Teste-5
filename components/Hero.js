@@ -21,14 +21,14 @@ function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => scrollToSection('portfolio')}
+                onClick={() => scrollToSection('services')}
                 className="btn-netflix px-8 py-4 rounded text-white font-bold text-lg"
               >
                 <i className="fas fa-play mr-2"></i>
                 Assistir Soluções
               </button>
               <button 
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection('about')}
                 className="border-2 border-white text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-black transition-all"
               >
                 <i className="fas fa-info-circle mr-2"></i>
