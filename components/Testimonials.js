@@ -4,21 +4,21 @@ function Testimonials() {
       {
         name: 'Ana Flores',
         role: 'Terapeuta',
-        text: 'O trabalho da Louise transformou completamente nossa presença digital. Vendas aumentaram 300% em 3 meses!',
+        text: 'Hoje venho aqui agradecer ao seu trabalho de gestão em marketing, em menos de 1 mês já estou vendo resultados',
         rating: 5,
         avatar: '3.png'
       },
       {
         name: 'Leandro',
         role: 'Just Açaí Rodeiro',
-        text: 'Impressionante como ela conseguiu capturar a essência da nossa marca. Nosso Instagram nunca teve tanto engajamento.',
+        text: 'Desde que começamos a trabalhar com a Designer Louise, nossos posts ficaram tão deliciosos quanto nossos açaís! Ela entendeu perfeitamente o clima jovem, vibrante e refrescante que queríamos transmitir. Simplesmente impecável!',
         rating: 5,
         avatar: '1.png'
       },
       {
         name: 'Ana Paula',
         role: 'Making Of - Centro de Beleza',
-        text: 'Louise não só criou um design incrível, mas também uma estratégia que realmente funciona. Recomendo 100%!',
+        text: 'A Louise trouxe elegância e sofisticação para nossa marca. O cuidado que ela tem com cada detalhe faz toda a diferença, e isso reflete exatamente oque oferecemos no nosso espaço. Somos fãs do trabalho dela!',
         rating: 5,
         avatar: '2.png'
       }
