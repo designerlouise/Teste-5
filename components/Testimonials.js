@@ -6,7 +6,7 @@ function Testimonials() {
         role: 'Terapeuta',
         text: 'Hoje venho aqui agradecer ao seu trabalho de gestão em marketing, em menos de 1 mês já estou vendo resultados',
         rating: 5,
-        avatar: '/img/3.png'
+        avatar: 'Teste-5/img/3.png'
       },
       {
         name: 'Just Açai Rodeiro',
