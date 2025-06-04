@@ -44,7 +44,8 @@ function Footer() {
             <div>
               <h3 className="text-white font-bold mb-4">Soluções Estratégicas</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Design Digital</a></li>
+                <li><a href="<button 
+                onClick={() => scrollToSection('services')}" className="hover:text-white transition-colors">Design Digital</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Social Media</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Tráfego Pago</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Branding</a></li>
