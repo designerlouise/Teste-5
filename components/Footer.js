@@ -13,7 +13,7 @@ function Footer() {
                 Conteúdo que converte como os maiores sucessos do streaming.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+                <a href="https://www.instagram.com/designer.louise/profilecard/?igsh=MWgydHBpbTV0NDJicw==" className="text-gray-400 hover:text-red-500 transition-colors">
                   <i className="fab fa-instagram text-2xl"></i>
                 </a>
                 {/* LinkedIn trocado por email */}
