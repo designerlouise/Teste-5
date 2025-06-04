@@ -13,14 +13,14 @@ function Testimonials() {
         role: 'Loja de Açais',
         text: 'Desde que começamos a trabalhar com a Designer Louise, nossa identidade visual ficou tão deliciosa quanto nossos açaís! Ela entendeu perfeitamente o clima jovem, vibrante e refrescante que queríamos transmitir. Simplesmente impecável!.',
         rating: 5,
-        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+        avatar: '/1.png'
       },
       {
         name: 'Making Of',
         role: 'Centro de Beleza em Barbacena',
         text: 'A Louise trouxe elegância e sofisticação para nossa marca. O cuidado que ela tem com cada detalhe faz toda a diferença, e isso reflete exatamente oque oferecemos no nosso espaço. Somos fãs do trabalho dela!',
         rating: 5,
-        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+        avatar: '/2.png'
       }
     ];
 
