@@ -12,9 +12,9 @@ function Header() {
             
             <nav className="hidden lg:flex space-x-6">
               <a href="#home" className="text-white hover:text-red-500 transition-colors font-medium">Início</a>
-              <a href="#Who am I?" className="text-white hover:text-red-500 transition-colors font-medium">Quem Sou</a>
-              <a href="#services" className="text-white hover:text-red-500 transition-colors font-medium">Soluções</a>
-              <a href="#Commercial Presentation" className="text-white hover:text-red-500 transition-colors font-medium">Portfolio</a>
+              <a href="#about" className="text-white hover:text-red-500 transition-colors font-medium">Quem Sou eu</a>
+              <a href="#services" className="text-white hover:text-red-500 transition-colors font-medium">Soluções Estratégicas</a>
+              <a href="#portfolio" className="text-white hover:text-red-500 transition-colors font-medium">Apresentação Comercial</a>
               <a href="#downloads" className="text-white hover:text-red-500 transition-colors font-medium">Downloads</a>
               <a href="#testimonials" className="text-white hover:text-red-500 transition-colors font-medium">Feedbacks</a>
               <a href="#contact" className="text-white hover:text-red-500 transition-colors font-medium">Contato</a>
@@ -32,9 +32,9 @@ function Header() {
             <nav className="lg:hidden pb-4 bg-black/95">
               <div className="flex flex-col space-y-4">
                 <a href="#home" className="text-white hover:text-red-500 transition-colors">Início</a>
-                <a href="#about" className="text-white hover:text-red-500 transition-colors">Quem Sou</a>
-                <a href="#services" className="text-white hover:text-red-500 transition-colors">Soluções</a>
-                <a href="#portfolio" className="text-white hover:text-red-500 transition-colors">Portfolio</a>
+                <a href="#about" className="text-white hover:text-red-500 transition-colors">Quem Sou eu</a>
+                <a href="#services" className="text-white hover:text-red-500 transition-colors">Soluções Estratégicas</a>
+                <a href="#portfolio" className="text-white hover:text-red-500 transition-colors">Apresentação Comercial</a>
                 <a href="#downloads" className="text-white hover:text-red-500 transition-colors">Downloads</a>
                 <a href="#testimonials" className="text-white hover:text-red-500 transition-colors">Feedbacks</a>
                 <a href="#contact" className="text-white hover:text-red-500 transition-colors">Contato</a>
