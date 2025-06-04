@@ -1,60 +1,69 @@
-function About() {
+function Testimonials() {
   try {
+    const testimonials = [
+      {
+        name: 'Ana Flores',
+        role: 'Terapeuta',
+        text: 'O trabalho da Louise transformou completamente nossa presença digital. Vendas aumentaram 300% em 3 meses!',
+        rating: 5,
+        avatar: '3.png'
+      },
+      {
+        name: 'Leandro',
+        role: 'Just Açaí Rodeiro',
+        text: 'Impressionante como ela conseguiu capturar a essência da nossa marca. Nosso Instagram nunca teve tanto engajamento.',
+        rating: 5,
+        avatar: '1.png'
+      },
+      {
+        name: 'Ana Paula',
+        role: 'Making Of - Centro de Beleza',
+        text: 'Louise não só criou um design incrível, mas também uma estratégia que realmente funciona. Recomendo 100%!',
+        rating: 5,
+        avatar: '2.png'
+      }
+    ];
+
     return (
-      <section data-name="about" data-file="components/About.js" id="about" className="section-padding bg-black">
+      <section data-name="testimonials" data-file="components/Testimonials.js" id="testimonials" className="section-padding bg-gray-900">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">
+              <span className="netflix-red-text">Feedbacks</span> dos Clientes
+            </h2>
+            <p className="text-xl text-gray-300">
+              Veja o que nossos clientes falam sobre nosso trabalho
+            </p>
+          </div>
 
-            {/* Texto à esquerda */}
-            <div>
-              <div className="mb-4">
-                <span className="bg-red-600 text-white text-sm px-3 py-1 rounded font-bold">
-                  CRIADORA ORIGINAL
-                </span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Quem <span className="text-red-600">Sou Eu</span>
-              </h2>
-              <p className="text-lg text-white mb-4 leading-relaxed">
-                Sou Louise, designer apaixonada por criar conteúdos visuais que não apenas impressionam, mas que realmente convertem.
-                Com mais de 5 anos de experiência no mercado digital.
-              </p>
-              <p className="text-md text-gray-400 mb-8 leading-relaxed">
-                Especializada em transformar ideias em campanhas visuais de sucesso, combinando criatividade com estratégia para gerar resultados reais para meus clientes.
-              </p>
-
-              {/* Estatísticas */}
-              <div className="flex flex-wrap gap-4">
-                <div className="bg-gray-800 text-white px-4 py-2 rounded">
-                  <span className="text-red-500 font-bold">500+</span> Projetos
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-black/60 rounded-lg p-6 card-hover">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <h4 className="font-bold">{testimonial.name}</h4>
+                    <p className="text-sm text-gray-400">{testimonial.role}</p>
+                  </div>
                 </div>
-                <div className="bg-gray-800 text-white px-4 py-2 rounded">
-                  <span className="text-red-500 font-bold">200+</span> Clientes
+                <div className="flex mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <i key={i} className="fas fa-star netflix-red-text mr-1"></i>
+                  ))}
                 </div>
-                <div className="bg-gray-800 text-white px-4 py-2 rounded">
-                  <span className="text-red-500 font-bold">5</span> Anos
-                </div>
+                <p className="text-gray-300 italic">"{testimonial.text}"</p>
               </div>
-            </div>
-
-            {/* Card com imagem - retangular vertical */}
-            <div className="w-full h-[400px] bg-gradient-to-b from-[#1b0000] to-[#300000] rounded-2xl shadow-xl flex flex-col items-center justify-center text-center">
-              <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-red-600 mb-4">
-                <img
-                  src="4.png" // Substitua pelo caminho correto
-                  alt="Louise Designer"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="text-white text-lg font-medium">Louise Designer</p>
-            </div>
-
+            ))}
           </div>
         </div>
       </section>
     );
   } catch (error) {
-    console.error('About component error:', error);
+    console.error('Testimonials component error:', error);
     reportError(error);
   }
 }
