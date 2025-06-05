@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@700&display=swap');
-
 :root {
-  --netflix-black: #000;
   --netflix-red: #e50914;
-  --netflix-white: #fff;
+  --black: #000;
+  --white: #fff;
 }
 
 /* Reset */
@@ -14,60 +12,78 @@
 }
 
 body {
-  font-family: 'Netflix Sans', sans-serif;
-  background-color: var(--netflix-black);
-  color: var(--netflix-white);
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
 }
 
-/* ---------- Intro Animation ---------- */
-#introAnimation {
+/* ------------ Intro ------------ */
+.intro {
   position: fixed;
   inset: 0;
-  background-color: black;
+  background: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   z-index: 9999;
 }
 
-/* Big L */
-.bigL {
-  font-size: 160px;
-  color: var(--netflix-red);
-  opacity: 0;
-  animation: showL 1s ease-in forwards;
+/* Animation Container */
+.logo-animation {
   position: relative;
+  font-size: 150px;
+  color: var(--netflix-red);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+/* Big L */
+.letter {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  opacity: 0;
+  animation: showL 0.8s ease forwards;
 }
 
 /* Rest of text */
-.louiseflix {
-  font-size: 60px;
-  color: var(--netflix-red);
+.text {
+  font-weight: bold;
   opacity: 0;
-  animation: showText 1.5s ease forwards;
-  animation-delay: 1.5s;
+  animation: showText 1.2s ease forwards;
+  animation-delay: 1.2s;
 }
 
-.restText {
-  letter-spacing: 5px;
+/* Shine Effect (Light Beam) */
+.shine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+  left: -100px;
+  animation: shineMove 1s ease forwards;
+  animation-delay: 0.5s;
 }
 
-/* Fade out intro */
-body.loaded #introAnimation {
+/* Fade Out */
+body.loaded .intro {
   animation: fadeOut 1s ease forwards;
-  animation-delay: 3.5s;
+  animation-delay: 2.8s;
 }
 
-/* ---------- Logo transition ---------- */
+/* ------------ Logo Transition ------------ */
 .logo {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
-  transition: all 1s ease;
   opacity: 0;
+  transition: all 1s ease;
 }
 
 body.loaded .logo {
@@ -77,22 +93,18 @@ body.loaded .logo {
   opacity: 1;
 }
 
-/* Hide main content until loaded */
-body:not(.loaded) main,
-body:not(.loaded) header {
+/* Hide main until loaded */
+body:not(.loaded) main {
   visibility: hidden;
 }
 
-/* ---------- Keyframes ---------- */
+/* ------------ Keyframes ------------ */
 @keyframes showL {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  to { opacity: 1; }
+}
+
+@keyframes shineMove {
+  to { left: 200px; }
 }
 
 @keyframes showText {
@@ -111,4 +123,13 @@ body:not(.loaded) header {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+/* ------------ Main Content ------------ */
+main {
+  padding: 100px 20px;
+}
+
+h1 {
+  font-size: 3rem;
 }
