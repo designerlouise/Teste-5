@@ -1,55 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
-/* Estilo da animação inicial */
+@import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@700&display=swap');
+
+:root {
+  --netflix-black: #000;
+  --netflix-red: #e50914;
+  --netflix-white: #fff;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Netflix Sans', sans-serif;
+  background-color: var(--netflix-black);
+  color: var(--netflix-white);
+}
+
+/* ---------- Intro Animation ---------- */
 #introAnimation {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  color: white;
+  inset: 0;
+  background-color: black;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   z-index: 9999;
-  animation: fadeOut 2s ease 4s forwards;
 }
 
+/* Big L */
 .bigL {
-  font-size: 120px;
-  font-weight: bold;
+  font-size: 160px;
+  color: var(--netflix-red);
   opacity: 0;
   animation: showL 1s ease-in forwards;
+  position: relative;
 }
 
+/* Rest of text */
 .louiseflix {
-  font-size: 32px;
+  font-size: 60px;
+  color: var(--netflix-red);
   opacity: 0;
-  animation: showText 1s ease-in forwards;
+  animation: showText 1.5s ease forwards;
   animation-delay: 1.5s;
 }
 
-@keyframes showL {
-  to { opacity: 1; }
+.restText {
+  letter-spacing: 5px;
 }
 
-@keyframes showText {
-  to { opacity: 1; }
+/* Fade out intro */
+body.loaded #introAnimation {
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 3.5s;
 }
 
-@keyframes fadeOut {
-  to { opacity: 0; visibility: hidden; }
-}
-
-/* Logo inicial e transição para o canto */
+/* ---------- Logo transition ---------- */
 .logo {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 200px;
   transition: all 1s ease;
-  z-index: 999;
   opacity: 0;
 }
 
@@ -60,79 +77,38 @@ body.loaded .logo {
   opacity: 1;
 }
 
-/* Oculta o site até a animação terminar */
-body:not(.loaded) main, body:not(.loaded) section {
-  display: none;
-}
-:root {
-  --netflix-black: #000000;
-  --netflix-dark: #141414;
-  --netflix-red: #e50914;
-  --netflix-white: #ffffff;
-  --netflix-gray: #564d4d;
-  --netflix-light-gray: #f3f3f3;
+/* Hide main content until loaded */
+body:not(.loaded) main,
+body:not(.loaded) header {
+  visibility: hidden;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ---------- Keyframes ---------- */
+@keyframes showL {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--netflix-black);
-  color: var(--netflix-white);
-  line-height: 1.6;
+@keyframes showText {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.netflix-logo {
-  font-family: 'Netflix Sans', 'Roboto', sans-serif;
-  font-weight: 700;
-  color: var(--netflix-red);
-}
-
-.netflix-red-bg {
-  background-color: var(--netflix-red);
-}
-
-.netflix-red-text {
-  color: var(--netflix-red);
-}
-
-.netflix-gradient {
-  background: linear-gradient(135deg, var(--netflix-red), #b81d24);
-}
-
-.card-hover {
-  transition: all 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.3);
-}
-
-.btn-netflix {
-  background-color: var(--netflix-red);
-  transition: all 0.3s ease;
-}
-
-.btn-netflix:hover {
-  background-color: #b81d24;
-  transform: translateY(-2px);
-}
-
-.section-padding {
-  padding: 4rem 0;
-}
-
-.hero-gradient {
-  background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(20,20,20,1) 100%);
-}
-
-@media (max-width: 768px) {
-  .section-padding {
-    padding: 2rem 0;
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
