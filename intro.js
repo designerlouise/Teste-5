@@ -1,5 +1,4 @@
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const logo = document.getElementById('logo-anim');
     const intro = document.getElementById('intro');
     const header = document.getElementById('header');
