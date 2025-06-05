@@ -24,7 +24,7 @@
 }
 
 .logo-text {
-  font-size: clamp(5rem, 10vw, 8rem);
+  font-size: clamp(5rem, 6vw, 6rem);
   white-space: nowrap;
   transition: all 0.8s ease;
 }
