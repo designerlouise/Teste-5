@@ -1,36 +1,19 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const logo = document.getElementById('logo-text');
+  const logo = document.getElementById('logo-anim');
   const intro = document.getElementById('intro');
-  const root = document.getElementById('root');
+  const header = document.getElementById('header');
+  const main = document.getElementById('main-content');
 
-  // Cria o efeito de "L" separado do "OUISEFLIX"
-  const letterL = document.createElement('span');
-  letterL.classList.add('letter');
-  letterL.textContent = 'L';
-
-  const restText = document.createElement('span');
-  restText.classList.add('rest');
-  restText.textContent = 'OUISEFLIX';
-
-  logo.textContent = '';
-  logo.appendChild(letterL);
-  logo.appendChild(restText);
-
-  // Passo 1: Mostrar L
+  // Inicia a animação após 1 segundo
   setTimeout(() => {
-    logo.classList.add('show-rest');
+    logo.textContent = 'LOUISEFLIX';
+    logo.classList.add('animate-logo');
   }, 1000);
 
-  // Passo 2: Encolher e ir para o canto
-  setTimeout(() => {
-    logo.classList.remove('show-rest');
-    logo.classList.add('shrink');
-  }, 3000);
-
-  // Passo 3: Mostrar conteúdo
+  // Após 3 segundos, esconde a intro e revela o conteúdo
   setTimeout(() => {
     intro.style.display = 'none';
-    root.classList.remove('hidden');
-    root.classList.add('show');
-  }, 4500);
+    header.classList.remove('hidden');
+    main.classList.add('opacity-100');
+  }, 3000);
 });
