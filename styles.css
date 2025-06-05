@@ -1,85 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-/* ===================== */
-/* Animação de Abertura */
-/* ===================== */
-.intro-screen {
-  position: fixed;
-  background-color: #000;
-  width: 100%;
-  height: 100vh;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+<style>
+@keyframes shrinkLogo {
+  0% {
+    transform: scale(1);
+    letter-spacing: 0;
+  }
+  50% {
+    transform: scale(0.5);
+    letter-spacing: 0.5rem;
+  }
+  100% {
+    transform: scale(0.3) translate(-150%, -200%);
+  }
 }
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  color: #e50914;
-  font-weight: 700;
-  font-family: 'Netflix Sans', sans-serif;
-  overflow: hidden;
+.animate-logo {
+  animation: shrinkLogo 2s ease-in-out forwards;
 }
-
-.logo-text {
-  font-size: clamp(3rem, 8vw, 6rem);
-  white-space: nowrap;
-  transition: all 0.8s ease;
-}
-
-.letter {
-  opacity: 1;
-  transition: transform 0.8s ease;
-}
-
-.rest {
-  transform: translateX(100%);
-  opacity: 0;
-  transition: transform 0.8s ease, opacity 0.8s ease;
-}
-
-.show-rest .rest {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.show-rest .letter {
-  transform: translateX(-10%);
-}
-
-.shrink {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  font-size: clamp(1.2rem, 5vw, 2rem);
-  transition: all 1s ease;
-}
-
-/* Oculta e mostra conteúdo */
-.hidden {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-:root {
-  --netflix-black: #000000;
-  --netflix-dark: #141414;
-  --netflix-red: #e50914;
-  --netflix-white: #ffffff;
-  --netflix-gray: #564d4d;
-  --netflix-light-gray: #f3f3f3;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+</style>
 
 body {
   font-family: 'Roboto', sans-serif;
