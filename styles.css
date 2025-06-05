@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Tela inicial preta com centralização */
+/* Intro container centralizada */
 .intro-container {
   position: fixed;
   inset: 0;
@@ -9,23 +9,21 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  overflow: hidden;
 }
 
-/* Logo inicial */
+/* Estilo inicial da letra L */
 .intro-logo {
-  font-size: 12rem;
-  font-weight: 800;
+  font-size: 10rem;
+  font-weight: 900;
   color: red;
   opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-  white-space: nowrap;
+  transition: opacity 1s ease-out;
   text-align: center;
-  max-width: 100vw;
+  white-space: nowrap;
   overflow: hidden;
 }
 
-/* Logo final no header */
+/* Header fixo com logo */
 .site-header {
   position: fixed;
   top: 0;
@@ -43,34 +41,20 @@
   text-decoration: none;
 }
 
-/* Conteúdo da página */
+/* Conteúdo do site */
 .site-main {
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  padding-top: 80px; /* espaçamento para o header fixo */
+  padding-top: 80px;
 }
 
-/* Keyframes */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes shrinkAndReveal {
+/* Animação do logo para o canto */
+@keyframes toCorner {
   0% {
-    font-size: 12rem;
-    letter-spacing: 0;
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    font-size: 5rem;
-    letter-spacing: 0.5rem;
-    content: "LOUISEFLIX";
+    transform: scale(1) translate(0, 0);
   }
   100% {
-    font-size: 2rem;
-    transform: translate(-40vw, -40vh) scale(0.5);
+    transform: scale(0.4) translate(-120%, -200%);
   }
 }
 
