@@ -19,28 +19,18 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Animação de Introdução -->
-<div id="intro" class="intro-screen">
-  <div class="logo-container">
-    <span id="logo-text" class="logo-text">L</span>
-  </div>
-</div>
-    <div id="root"></div>
     <!-- Intro Animation -->
-<div id="intro" class="fixed inset-0 bg-black z-50 flex items-center justify-center">
-  <h1 id="logo-anim" class="text-red-600 text-[10rem] font-extrabold transition-all duration-1000 ease-in-out">L</h1>
+<div id="intro" class="intro-container">
+  <h1 id="logo-anim" class="intro-logo">L</h1>
 </div>
 
-<!-- Header fixo com logo final -->
-<header id="header" class="fixed w-full top-0 z-40 bg-black/90 backdrop-blur-sm hidden">
-  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="#home" id="logo-final" class="text-3xl font-bold text-red-600">LOUISEFLIX</a>
-  </div>
+<!-- Logo final + Conteúdo -->
+<header id="header" class="site-header hidden">
+  <a href="#home" id="logo-final" class="logo-final">LOUISEFLIX</a>
 </header>
 
-<!-- Conteúdo da página -->
-<main id="main-content" class="opacity-0 transition-opacity duration-1000">
-  <!-- Coloque aqui o resto do seu conteúdo -->
+<main id="main-content" class="site-main">
+  <!-- Aqui entra o conteúdo do seu site -->
 </main>
     
     <script src="intro.js"></script>
