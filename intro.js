@@ -1,32 +1,33 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const logo = document.getElementById('logo-anim');
-  const intro = document.getElementById('intro');
-  const header = document.getElementById('header');
-  const main = document.getElementById('main-content');
+    const logo = document.getElementById('logo-anim');
+    const intro = document.getElementById('intro');
+    const header = document.getElementById('header');
+    const main = document.getElementById('main-content');
 
-  // Fase 1: Fade-in da letra L
-  setTimeout(() => {
-    logo.style.opacity = '1';
-  }, 200);
+    // Fase 1: Mostrar o L com fade-in
+    setTimeout(() => {
+      logo.style.opacity = '1';
+    }, 300); // Aparece rapidamente
 
-  // Fase 2: Transforma o L em LOUISEFLIX com leve zoom out
-  setTimeout(() => {
-    logo.textContent = 'LOUISEFLIX';
-    logo.style.transition = 'transform 1s ease, font-size 1s ease, letter-spacing 0.6s ease';
-    logo.style.fontSize = '4rem';
-    logo.style.transform = 'scale(0.9)';
-    logo.style.letterSpacing = '0.2rem';
-  }, 1500);
+    // Fase 2: Espera um pouco mais antes de virar LOUISEFLIX
+    setTimeout(() => {
+      logo.textContent = 'LOUISEFLIX';
+      logo.style.transition = 'transform 1.2s ease, font-size 1.2s ease, letter-spacing 1s ease';
+      logo.style.fontSize = '4rem';
+      logo.style.transform = 'scale(0.9)';
+      logo.style.letterSpacing = '0.2rem';
+    }, 2500); // Espera 2.5 segundos antes de mostrar "LOUISEFLIX"
 
-  // Fase 3: Move para o canto superior esquerdo com zoom out
-  setTimeout(() => {
-    logo.style.animation = 'toCorner 1.2s ease-in-out forwards';
-  }, 2700);
+    // Fase 3: Move o logo para o canto
+    setTimeout(() => {
+      logo.style.animation = 'toCorner 1.2s ease-in-out forwards';
+    }, 4200); // Move após a transição de texto
 
-  // Fase 4: Finaliza a transição — esconde a intro e mostra o site
-  setTimeout(() => {
-    intro.style.display = 'none';
-    header.classList.remove('hidden');
-    main.style.opacity = '1';
-  }, 4000);
-});
+    // Fase 4: Mostrar o site
+    setTimeout(() => {
+      intro.style.display = 'none';
+      header.classList.remove('hidden');
+      main.style.opacity = '1';
+    }, 5500); // Site aparece logo após a logo ir para o topo
+  });
+</script>
