@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Intro container centralizada */
+/* Intro central */
 .intro-container {
   position: fixed;
   inset: 0;
@@ -11,19 +11,19 @@
   z-index: 9999;
 }
 
-/* Estilo inicial da letra L */
+/* Letra L inicial */
 .intro-logo {
   font-size: 10rem;
   font-weight: 900;
   color: red;
   opacity: 0;
-  transition: opacity 1s ease-out;
+  transition: opacity 1.5s ease-out;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* Header fixo com logo */
+/* Logo no header final */
 .site-header {
   position: fixed;
   top: 0;
@@ -41,20 +41,19 @@
   text-decoration: none;
 }
 
-/* Conteúdo do site */
 .site-main {
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
-/* Animação do logo para o canto */
+/* Anima o logo para o canto */
 @keyframes toCorner {
   0% {
     transform: scale(1) translate(0, 0);
   }
   100% {
-    transform: scale(0.4) translate(-120%, -200%);
+    transform: scale(0.4) translate(-120%, -220%);
   }
 }
 
