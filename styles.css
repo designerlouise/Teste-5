@@ -17,16 +17,22 @@
 .logo-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #e50914;
   font-weight: 700;
   font-family: 'Netflix Sans', sans-serif;
   overflow: hidden;
+  max-width: 100vw; /* Garante que nada passe da largura da tela */
+  flex-wrap: nowrap;
 }
 
 .logo-text {
-  font-size: clamp(4rem, 8vw, 6rem);
+  font-size: clamp(2rem, 12vw, 5rem); /* Diminui para telas menores */
   white-space: nowrap;
   transition: all 0.8s ease;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .letter {
