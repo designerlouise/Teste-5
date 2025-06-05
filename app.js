@@ -1,24 +1,21 @@
-window.addEventListener('DOMContentLoaded', () => {
-  const logo = document.getElementById('logo-text');
-  const intro = document.getElementById('intro');
-  const root = document.getElementById('root');
+function App() {
 
-  // Passo 1: Mostrar apenas "L"
-  setTimeout(() => {
-    logo.textContent = 'LOUISEFLIX';
-    logo.classList.add('expand');
-  }, 1000);
+</script>  try {
+return (
 
-  // Passo 2: Encolher para canto
-  setTimeout(() => {
-    logo.classList.remove('expand');
-    logo.classList.add('shrink');
-  }, 2500);
-
-  // Passo 3: Mostrar conteúdo
-  setTimeout(() => {
-    intro.style.display = 'none';
-    root.classList.remove('hidden');
-    root.classList.add('show');
-  }, 4000);
-});
+<div data-name="app" data-file="app.js">  
+<Header />  
+<Hero />  
+<About />  
+<Services />  
+<Downloads />  
+<Testimonials />  
+<Contact />  
+<Footer />  
+</div>  
+);  
+} catch (error) {  
+console.error('App component error:', error);  
+reportError(error);  
+}  
+}  ReactDOM.render(React.createElement(App), document.getElementById('root'));
