@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Louiseflix</title>
+  <title>Louiseflix - Design Digital & Social Media</title>
+
+  <meta name="description" content="Louiseflix - Sua plataforma de design digital, social media e tráfego pago.">
+  <meta name="keywords" content="louiseflix, designer, social media, tráfego pago, design digital, marketing digital">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Intro -->
 <div class="intro">
+  <canvas id="particles"></canvas>
+
   <div class="logo-animation">
     <span class="letter">L</span>
     <span class="shine"></span>
@@ -16,13 +26,28 @@
   </div>
 </div>
 
+<!-- Header -->
 <header>
-  <img src="logo.png" alt="Logo" class="logo">
+  <img src="logo.png" alt="Logo Louiseflix" class="logo" id="mainLogo">
 </header>
 
-<main id="root">
-  <h1>Bem-vindo à LouiseFlix</h1>
-</main>
+<!-- React App -->
+<div id="root"></div>
+
+<!-- React Scripts -->
+<script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+<script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel" src="components/Header.js"></script>
+<script type="text/babel" src="components/Hero.js"></script>
+<script type="text/babel" src="components/About.js"></script>
+<script type="text/babel" src="components/Services.js"></script>
+<script type="text/babel" src="components/Downloads.js"></script>
+<script type="text/babel" src="components/Testimonials.js"></script>
+<script type="text/babel" src="components/Contact.js"></script>
+<script type="text/babel" src="components/Footer.js"></script>
+<script type="text/babel" src="app.js"></script>
 
 <script src="script.js"></script>
 </body>
