@@ -3,22 +3,34 @@ window.addEventListener('DOMContentLoaded', () => {
   const intro = document.getElementById('intro');
   const root = document.getElementById('root');
 
-  // Passo 1: Mostrar apenas "L"
+  // Cria o efeito de "L" separado do "OUISFLIX"
+  const letterL = document.createElement('span');
+  letterL.classList.add('letter');
+  letterL.textContent = 'L';
+
+  const restText = document.createElement('span');
+  restText.classList.add('rest');
+  restText.textContent = 'OUISFLIX';
+
+  logo.textContent = '';
+  logo.appendChild(letterL);
+  logo.appendChild(restText);
+
+  // Passo 1: Mostrar L
   setTimeout(() => {
-    logo.textContent = 'LOUISEFLIX';
-    logo.classList.add('expand');
+    logo.classList.add('show-rest');
   }, 1000);
 
-  // Passo 2: Encolher para o canto
+  // Passo 2: Encolher e ir para o canto
   setTimeout(() => {
-    logo.classList.remove('expand');
+    logo.classList.remove('show-rest');
     logo.classList.add('shrink');
-  }, 2500);
+  }, 3000);
 
   // Passo 3: Mostrar conteúdo
   setTimeout(() => {
     intro.style.display = 'none';
     root.classList.remove('hidden');
     root.classList.add('show');
-  }, 4000);
+  }, 4500);
 });
