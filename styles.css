@@ -15,28 +15,45 @@
 }
 
 .logo-container {
-  font-size: 6rem;
+  display: flex;
+  align-items: center;
   color: #e50914;
   font-weight: 700;
   font-family: 'Netflix Sans', sans-serif;
+  overflow: hidden;
 }
 
 .logo-text {
-  transition: all 1s ease;
+  font-size: clamp(3rem, 8vw, 6rem);
   white-space: nowrap;
+  transition: all 0.8s ease;
 }
 
-/* Expansão para LOUISEFLIX */
-.expand {
-  font-size: 5rem;
+.letter {
+  opacity: 1;
+  transition: transform 0.8s ease;
 }
 
-/* Encolher para canto */
+.rest {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.show-rest .rest {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.show-rest .letter {
+  transform: translateX(-10%);
+}
+
 .shrink {
   position: fixed;
   top: 20px;
   left: 20px;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 5vw, 2rem);
   transition: all 1s ease;
 }
 
