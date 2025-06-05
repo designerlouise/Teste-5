@@ -3,14 +3,14 @@ window.addEventListener('DOMContentLoaded', () => {
   const intro = document.getElementById('intro');
   const root = document.getElementById('root');
 
-  // Cria o efeito de "L" separado do "OUISFLIX"
+  // Cria o efeito de "L" separado do "OUISEFLIX"
   const letterL = document.createElement('span');
   letterL.classList.add('letter');
   letterL.textContent = 'L';
 
   const restText = document.createElement('span');
   restText.classList.add('rest');
-  restText.textContent = 'OUISFLIX';
+  restText.textContent = 'OUISEFLIX';
 
   logo.textContent = '';
   logo.appendChild(letterL);
