@@ -1,36 +1,34 @@
-janela.addEventListener('DOMContentLoaded', () => {
-  const logotipo = document.getElementById('logo-texto');
+window.addEventListener('DOMContentLoaded', () => {
+  const logo = document.getElementById('logo-text');
   const intro = document.getElementById('intro');
   const root = document.getElementById('root');
 
-  // Cria o efeito de "L" separado do "OUISEFLIX"
-  const letraL = document.createElement('span');
-  letterL.classList.add('letra');
-  letraL.textContent = 'L';
+  const letterL = document.createElement('span');
+  letterL.classList.add('letter');
+  letterL.textContent = 'L';
 
   const restText = document.createElement('span');
   restText.classList.add('rest');
   restText.textContent = 'OUISEFLIX';
 
   logo.textContent = '';
-  logo.appendChild(letraL);
+  logo.appendChild(letterL);
   logo.appendChild(restText);
 
-  // Passo 1: Mostrar L
-  definirTempoLimite(() => {
-    logo.classList.add('mostrar-rest');
+  // Passo 1: Mostrar OUISEFLIX depois de 1s
+  setTimeout(() => {
+    logo.classList.add('show-rest');
   }, 1000);
 
-  // Passo 2: Anima suavemente até o canto
-  definirTempoLimite(() => {
-    logo.classList.remove('show-rest');
+  // Passo 2: Espera a transição terminar antes de animar ao canto
+  setTimeout(() => {
     logo.classList.add('logo-animate-move');
-  }, 3000);
+  }, 2500); // Começa a mover antes da próxima etapa
 
-  // Passo 3: Mostrar conteúdo
-  definirTempoLimite(() => {
-    intro.style.display = 'nenhum';
-    root.classList.remove('oculto');
-    root.classList.add('mostrar');
+  // Passo 3: Esconde intro e mostra o conteúdo
+  setTimeout(() => {
+    intro.style.display = 'none';
+    root.classList.remove('hidden');
+    root.classList.add('show');
   }, 4500);
 });
