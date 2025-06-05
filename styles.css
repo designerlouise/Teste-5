@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
+/* ===================== */
+/* Animação de Abertura */
+/* ===================== */
+.intro-screen {
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  font-size: 6rem;
+  color: #e50914;
+  font-weight: 700;
+  font-family: 'Netflix Sans', sans-serif;
+}
+
+.logo-text {
+  transition: all 1s ease;
+  white-space: nowrap;
+}
+
+/* Expansão para LOUISEFLIX */
+.expand {
+  font-size: 5rem;
+}
+
+/* Encolher para canto */
+.shrink {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  transition: all 1s ease;
+}
+
+/* Oculta e mostra conteúdo */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 :root {
   --netflix-black: #000000;
   --netflix-dark: #141414;
