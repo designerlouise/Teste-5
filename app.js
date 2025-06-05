@@ -1,4 +1,13 @@
 function App() {
+  <script>
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.body.classList.add("loaded");
+      const intro = document.getElementById("introAnimation");
+      intro.style.display = "none";
+    }, 5000); // Espera 5 segundos para completar a animação
+  });
+</script>
   try {
     return (
       <div data-name="app" data-file="app.js">
