@@ -1,30 +1,23 @@
+// Animação de entrada
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    document.body.classList.add("loaded");
+    const intro = document.getElementById("introAnimation");
+    intro.style.display = "none";
+  }, 4500); // Tempo total da intro
+});
+
+// React (Simples Exemplo)
 function App() {
-  <script>
-  window.addEventListener("load", function () {
-    setTimeout(function () {
-      document.body.classList.add("loaded");
-      const intro = document.getElementById("introAnimation");
-      intro.style.display = "none";
-    }, 5000); // Espera 5 segundos para completar a animação
-  });
-</script>
-  try {
-    return (
-      <div data-name="app" data-file="app.js">
-        <Header />
-        <Hero />
-        <About />
-        <Services />
-        <Downloads />
-        <Testimonials />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  } catch (error) {
-    console.error('App component error:', error);
-    reportError(error);
-  }
+  return React.createElement(
+    "div",
+    null,
+    React.createElement("h1", null, "Bem-vindo à LouiseFlix!"),
+    React.createElement("p", null, "Seu hub de design digital e social media!")
+  );
 }
 
-ReactDOM.render(React.createElement(App), document.getElementById('root'));
+ReactDOM.render(
+  React.createElement(App),
+  document.getElementById("root")
+);
