@@ -10,7 +10,7 @@ function Contact() {
     const handleSubmit = (e) => {
       e.preventDefault();
 
-      const message = `Olá! Novo lead recebido:
+      const message = `Olá! Vim pelo sire e gostaria de iniciar um Projeto:
 
 📌 Nome: ${formData.name}
 📧 Email: ${formData.email}
